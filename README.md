@@ -91,3 +91,11 @@ python lib/test/utils/transform_trackingnet.py --tracker_name litetrack --cfg_na
 ```
 ## Acknowledgement
 Our code is built upon [LiteTrack]https://github.com/TsingWei/LiteTrack. Also grateful for PyTracking.
+
+# detail
+The environment we use is B9_cae_center_all_ep300.yaml.
+We utilize the training splits of LaSOT, GOT-10k, COCO and TrackingNet for offline training. 
+we test on six challenging benchmarks: GOT-10k, TrackingNet, LaSOT, UAV123, NfS and TNL2k. 
+The proposed RAAT is implemented in Python 3.7 and PyTorch 1.7.1 with a single RTX-3060 GPU. 
+The batch size has been configured to 32.
+we set the r_num=2 at the lib/models/litetrack/vit_cae_async.py.
