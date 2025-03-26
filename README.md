@@ -50,6 +50,7 @@ ${PROJECT_ROOT}
 ``` 
 ### Training
 Download pre-trained [CAE ViT-Base weights](https://github.com/lxtGH/CAE)(cae_base.pth) and put it under  `$PROJECT_ROOT$/pretrained_models`.   
+
 > **NOTE**: ViT in CAE is slightly different from the original ones (in Image is worth 16x16 words and MAE), e.g., projections of Q,K,V and layer scale.  Details can be seen in the code.
 
 Run the command below to train the model:
@@ -89,4 +90,4 @@ python tracking/test.py litetrack B6_cae_center_all_ep300 --dataset got10k_test 
 python lib/test/utils/transform_trackingnet.py --tracker_name litetrack --cfg_name B6_cae_center_all_ep300_300 # the last number is epoch
 ```
 ## Acknowledgement
-Our code is built upon [OSTrack](https://github.com/botaoye/OSTrack). Also grateful for PyTracking.
+Our code is built upon [LiteTrack]https://github.com/TsingWei/LiteTrack. Also grateful for PyTracking.
