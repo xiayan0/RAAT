@@ -80,7 +80,7 @@ def run_training(script_name, config_name, cudnn_benchmark=True, local_rank=-1, 
 #
 def main():
     parser = argparse.ArgumentParser(description='Run a train scripts in train_settings.')
-    parser.add_argument('--script', default='litetrack', type=str, required=False, help='Name of the train script.')
+    parser.add_argument('--script', default='raatrack', type=str, required=False, help='Name of the train script.')
     parser.add_argument('--config', default='B9_cae_center_all_ep300', type=str, required=False,
                         help="Name of the config file.")
     parser.add_argument('--cudnn_benchmark', type=bool, default=True, help='Set cudnn benchmark on (1) or off (0) (default is on).')
