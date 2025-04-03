@@ -1,4 +1,7 @@
+
 # RAAT
+[1] Jun Wang, Yan Xia, Yingzhen Si, Pengcheng Sha, Yuanyun Wang. RAAT: Enhanced Transformer Tracking with Recursive Atrous Attention for Robust Feature Representation. The Visual Computer. 2025.
+https://github.com/xiayan0/RAAT
 
 ## Prepare Environment
 
